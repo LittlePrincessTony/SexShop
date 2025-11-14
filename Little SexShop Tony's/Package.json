@@ -1,0 +1,12 @@
+{
+  "name": "little-sexshop-tonys",
+  "version": "1.0.0",
+  "description": "Tienda Little SexShop Tony's con integración PayPal",
+  "main": "Server.js",
+  "scripts": {
+    "start": "node Server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

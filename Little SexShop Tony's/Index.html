@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Little Tony - Sex Shop</title>
+
+<link rel="stylesheet" href="Styles.css">
+
+<!-- PayPal SDK -->
+<script src="https://www.paypal.com/sdk/js?client-id=TU_CLIENT_ID_AQUI&currency=COP"></script>
+
+</head>
+<body>
+
+<header>
+    <h1>Little SexShop Tony's</h1>
+    <div>
+        <button id="viewCartBtn">Ver carrito (<span id="cartCount">0</span>)</button>
+    </div>
+</header>
+
+<main id="container">
+    <section id="products"></section>
+
+    <aside id="cart">
+        <h2>Carrito</h2>
+
+        <div id="cartItems"></div>
+
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px">
+            <strong>Total:</strong>
+            <strong id="totalPrice">$0.00</strong>
+        </div>
+
+        <div style="margin-top:12px;display:flex;gap:8px">
+            <button id="checkoutBtn">Pagar</button>
+            <button id="clearBtn">Vaciar</button>
+        </div>
+
+        <!-- Contenedor del botón PayPal -->
+        <div id="paypal-button-container" style="margin-top: 20px;"></div>
+    </aside>
+</main>
+
+<footer>
+    Ejemplo de tienda — Para pagos reales configure Stripe o PayPal correctamente en el servidor.
+</footer>
+
+<script src="Main.js"></script>
+</body>
+</html>
